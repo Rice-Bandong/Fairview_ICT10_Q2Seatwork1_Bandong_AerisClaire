@@ -2,13 +2,27 @@ from pyscript import document
 
 # list of official Glee Club members
 members = [
-    "Stella of Solaria",
-    "Flora of Linphea",
-    "Musa of Melody",
-    "Tecna of Zenith",
-    "Aisha of Andros",
-    "Roxy of Earth",
-]
+    "Jordin San Juan",
+    "Elina Elysse Padre",
+    "Savanah Fugueroa",
+    "Franshellyahna Pilao",
+    "Kyrie Cerise Funtanilla",
+    "Antoinette Caleigh Garcia",
+    "Julianna Omaking",
+    "Aeris Bandong",
+    "Vyelle Mikayla Bunag",
+    "Gavin Ghonn Taguiga",
+    "Hans Arada",
+    "Alexi Villanueva",
+    "Dannielle Luna Dimasuhid",
+    "Ebtisam A. Al Hazmi",
+    "Marley Summer Reyes Manese",
+    "Queeny Haraj Guilas Ramos",
+    "Maia Isabelle Fabro",
+    "Erin Mandapat",
+    "Maria Elisha Padre",
+    "Nica Gabriela Crispino"
+    ]
 
 
 def check_candidate(event):
