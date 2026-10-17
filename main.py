@@ -1,6 +1,6 @@
 from pyscript import document
 
-# list of official Glee Club members
+# List of official Glee Club members
 members = [
     "Jordin San Juan",
     "Elina Elysse Padre",
@@ -22,23 +22,24 @@ members = [
     "Erin Mandapat",
     "Maria Elisha Padre",
     "Nica Gabriela Crispino"
-    ]
-
+]
 
 def check_candidate(event):
-    # retrieve first and last name from input fields
+    # Grab what user typed in the boxes
     first = document.getElementById("first_name").value.strip()
     last = document.getElementById("last_name").value.strip()
-    # combine inputs cleanly 
+    
+    # Put first and last name together
     full_name = f"{first} {last}".strip()
-    # check membership status without if/else or loops
+    
+    # Check if the name is in the list
     is_in_list = full_name in members
-    # dictionary lookup mapping boolean results directly to strings
+    
+    # Pick the right message depending on True or False
     output_messages = {
         True: f"✨🎶 Congratulations {full_name}! You are now part of the Glee Club! 🎤🌸",
         False: f"Sorry {full_name}, your name is not on the Glee Club roster.",
     }
-    # output message to result area
-    document.getElementById("result_area").innerText = output_messages[
-        is_in_list
-    ]
+    
+    # Show the message on the webpage
+    document.getElementById("result_area").innerText = output_messages[is_in_list]
